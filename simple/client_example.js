@@ -1,4 +1,4 @@
-const redis = require('./redis');
+const redis = require('../redis');
 const assert = require('assert');
 
 redis.set('key','value',function(err){
