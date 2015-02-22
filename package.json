@@ -1,0 +1,26 @@
+{
+  "name": "leadville",
+  "version": "1.0.0",
+  "description": "Examples of usin Redis with io.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thewazir/leadville.git"
+  },
+  "keywords": [
+    "Redis",
+    "io.js"
+  ],
+  "author": "Omer Wazir <omer@thewazir.com> (http://www.omerwazir.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thewazir/leadville/issues"
+  },
+  "homepage": "https://github.com/thewazir/leadville",
+  "dependencies": {
+    "redis": "^0.12.1"
+  }
+}
