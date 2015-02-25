@@ -1,6 +1,7 @@
 const Redis = require('redis');
 
 function _increment(key, cb) {
+    'use strict';
     var replied = false;
     var newValue;
 
@@ -35,8 +36,7 @@ function _increment(key, cb) {
 }
 
 const increment = function increment(key,cb){
-    _increment(key,callback);
-
+    'use strict';
 
     function callback(err, result){
         if(err && err.message === 'Conflict detected'){
@@ -45,6 +45,9 @@ const increment = function increment(key,cb){
             cb(err,result);
         }
     }
+
+    _increment(key,callback);
+
 };
 
 for(var i = 0; i < 10; i++){
