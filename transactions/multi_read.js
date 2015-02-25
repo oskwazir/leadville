@@ -11,3 +11,4 @@ redis.multi()
     console.log(`terminated. results: ${results}`);
     redis.quit();
 });
+
